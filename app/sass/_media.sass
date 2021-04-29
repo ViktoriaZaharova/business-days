@@ -1,0 +1,439 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+  footer
+    font-size: 20px
+    text-align: center
+    padding: 20px 0
+
+  .phone
+    font-size: 22px
+
+  .bay
+    font-size: 70px
+
+  .partner-wrapper
+    p
+      margin: 0 30px 0 0
+
+  .contacts h2
+    font-size: 30px
+    max-width: 500px
+
+
+  .logo-partner
+    max-width: 220px
+
+  .contacts .appeal, .contacts h3
+    font-size: 30px
+
+  .price-val
+    font-size: 40px
+    &:after
+      left: 0
+
+  .price-box
+    padding: 20px 0 0
+    h3
+      font-size: 30px
+    &:last-child
+      .price-val
+        &:after
+          left: auto
+          right: 0
+
+  .price-img
+    max-width: 300px
+
+  .list-number
+    font-size: 16px
+    li
+      margin: 0 0 10px
+
+  .btn-accent
+    height: auto
+    padding: 10px 30px
+    max-width: none
+    width: fit-content
+    font-size: 24px
+
+  .btn-border
+    height: auto
+    padding: 10px 30px
+    width: fit-content
+    max-width: none
+    font-size: 16px
+    margin: 0 auto
+
+  h2
+    font-size: 30px
+
+  .price-title
+    padding: 20px 0
+
+  .menu li a
+    font-size: 16px
+
+  .date-course .date
+    font-size: 30px
+
+  .date-course-text
+    font-size: 15px
+
+  .speakers-avatar
+    background: url("../img/circle-gradient.png") no-repeat center
+      size: cover
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    width: 300px
+    height: 300px
+    padding: 15px
+    &:before
+      display: none
+
+  .program-body__img
+    max-width: 400px
+
+  .speakers-box h3
+    font-size: 30px
+    margin: 0 0 40px
+
+  .speakers-item-two .speakers-box ul
+    font-size: 20px
+    li
+      margin: 0 0 10px
+
+  .program-body
+    padding: 30px
+    h4
+      font-size: 22px
+
+  .program-footer
+    padding: 74px 30px 20px
+
+  .speakers-item-two .speakers-box ul
+    margin: 0
+
+  .program-body__img
+    max-width: 300px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  .contacts-img
+    max-width: 200px
+    margin: 30px auto 0
+
+  .bay
+    font-size: 50px
+    padding: 0 0 10px
+    margin: 20px auto
+
+  .contacts h2
+    margin: -20px auto 20px
+    font-size: 24px
+
+  .partner-wrapper
+    justify-content: center
+
+  .address
+    text-align: center
+
+  h2
+    font-size: 24px
+
+  .price-box
+    max-width: none
+    width: 50%
+
+  .price-img
+    margin: 20px auto
+    order: 1
+
+  .list-number
+    li
+      text-align: center
+      
+  .price-val
+    background: #000
+    &:before
+      display: none
+
+  .btn-accent
+    margin: 40px auto 0
+
+  .price
+    padding: 0 0 50px
+
+  .main-img
+    margin: 20px auto
+    max-width: 200px
+
+  .main-footer
+    margin: 40px 0 0
+    max-width: none
+
+  .appeal
+    max-width: none
+
+  .seminars-in-numbers__box
+    margin: 30px 0 0
+    p
+      font-size: 24px
+    .number
+      font-size: 80px
+      &:before
+        height: 30px
+
+  .seminars-in-numbers
+    padding: 60px 0
+
+  .list-decor
+    font-size: 16px
+
+  .seminars-in-numbers-img
+    margin: 20px auto 0
+    display: flex
+    align-items: center
+    justify-content: center
+
+  .about-box h3
+    font-size: 18px
+
+  .box-text
+    font-size: 16px
+
+  .about-img
+    margin: 30px auto
+    justify-content: center
+    align-items: center
+    img
+      min-width: auto
+    &:before
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      width: 290px
+      height: 290px
+
+  .about-footer h4
+    font-size: 30px
+    margin: 0 0 34px
+
+  .about-footer:before
+    top: 0
+
+  .speakers
+    h2
+      text-align: center
+
+  .speakers-avatar
+    margin: 20px auto 30px
+    width: 270px
+    height: 270px
+
+  .speakers-box h3
+    font-size: 22px
+    &:before
+      width: 20px
+      height: 20px
+
+  .program
+    margin: 50px 0 0
+
+  .program-title
+    font-size: 30px
+    margin: 0 0 30px
+
+
+  .list-time li span
+    font-size: 15px
+
+  .list-time li p
+    font-size: 16px
+    margin: 0 15px 0 0
+
+  .program-body h4
+    margin: 0 0 20px
+
+  .advantages-line
+    font-size: 16px
+    .number
+      font-size: 30px
+      width: 30px
+      min-width: 30px
+    .decor
+      margin: 0 10px
+
+  .speakers-item-two .speakers-box ul
+    font-size: 16px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 930px)
+  .program-body__img
+    position: relative
+    margin: 30px auto 0
+    max-width: 250px
+    bottom: 0
+    right: 0
+
+  .speakers-item-two .speakers-box:after
+    width: 40px
+    height: 40px
+
+@media only screen and (max-width: 768px)
+  .bay
+    font-size: 30px
+
+  .partner-wrapper
+    flex-direction: column
+    align-items: center
+    p
+      margin: 0 auto 10px
+      font-size: 16px
+
+  .appeal
+    padding: 0 0 0 40px
+    font-size: 24px
+    &:before
+      width: 40px
+      height: 40px
+
+  .contacts .appeal
+    font-size: 24px
+    padding: 0 0 0 50px
+
+  .contacts
+    padding: 40px 0
+    h3
+      font-size: 24px
+      text-align: center
+
+  .price-val
+    font-size: 24px
+
+
+  .menu
+    margin: 0 0 30px
+    li a
+      font-size: 14px
+      &:after
+        margin: 0 8px
+
+  .date-course
+    margin: 30px 0
+    .date
+      font-size: 24px
+
+  .date-course-text
+    padding: 15px
+
+  .seminars-details__box-wrap ul
+    max-width: none
+    margin: 0 0 10px
+
+  .seminars-details h3
+    max-width: none
+
+  .about-footer h4
+    font-size: 24px
+
+  .about-footer .box-text
+    font-size: 14px
+
+  .about
+    padding: 0 0 20px
+
+  .program-title
+    font-size: 24px
+
+
+
+  .program-body h4
+    font-size: 18px
+
+  .list-time
+    max-width: none
+    li
+      p
+        max-width: 140px
+        margin: 0
+      span
+        width: calc(100% - 150px)
+        padding: 0 0 0 15px
+
+  .program-body__content
+    max-width: none
+    width: 100%
+
+  .program-footer
+    column-count: 1
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px)
+  .price-box
+    max-width: none
+    width: 100%
+
+  .menu
+    display: none
+    position: fixed
+    left: 0
+    top: 0
+    background: url("../img/bg2.jpg") no-repeat center
+      size: cover
+    height: 100%
+    max-width: 220px
+    width: 100%
+    overflow-y: auto
+    z-index: 2
+    li
+      margin: 0
+      a
+        padding: 20px
+
+  .btn-menu
+    display: flex
+
+  .date-course
+    flex-direction: column
+    align-items: center
+
+  .main-footer
+    flex-direction: column
+    align-items: flex-start
+    .list-decor
+      margin: 0 0 10px
+
+  .seminars-in-numbers__box p
+    font-size: 18px
+    margin: 10px 0 0
+
+  .seminars-details
+    margin: 40px 0 0
+
+@media only screen and (max-width: 480px)
+  .list-time
+    li
+      text-align: center
+      flex-direction: column
+      align-items: center
+      span
+        width: 100%
+        padding: 0
+        margin: 10px auto 0
+
+@media only screen and (max-width: 420px)
+  .about-footer
+    padding: 0
+    &:before
+      display: none
+
+
+
+

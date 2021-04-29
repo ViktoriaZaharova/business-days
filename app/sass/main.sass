@@ -1,0 +1,839 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+    
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0
+  box-sizing: border-box
+  font-family: $default-font
+  font-size: 16px
+
+.container
+  max-width: 1200px
+
+h2
+  width: 100%
+  text-transform: uppercase
+  font-size: 38px
+  font-weight: 800
+
+//main
+main
+  padding: 45px 0 25px
+  position: relative
+  background: #221f1f
+  color: #fff
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: url("../img/decor-home-bg.png") no-repeat center
+      size: cover
+    z-index: -1
+  &:after
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 115px
+    background: url("../img/line-gradient.png") no-repeat center
+      size: cover
+    z-index: -1
+
+.main-footer
+  margin: 80px 0 0 auto
+  max-width: 600px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+.menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: flex-end
+  width: 100%
+  margin: 0 0 53px
+  li
+    a
+      font-size: 20px
+      font-weight: bold
+      color: #fff
+      font-style: italic
+      display: flex
+      align-items: center
+      &:after
+        content: ''
+        display: inline-block
+        width: 14px
+        height: 14px
+        background: url("../img/decor1.png") no-repeat center
+          size: contain
+        margin: 0 15px
+      &:hover
+        color: $accent
+    &:last-child
+      a
+        &:after
+          display: none
+
+.title
+  width: 100%
+  position: relative
+  z-index: 1
+
+.date-course
+  width: 100%
+  display: flex
+  align-items: stretch
+  margin: 39px 0 36px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    width: 42px
+    height: 40px
+    background: url("../img/decor1.png") no-repeat center
+      size: contain
+    right: -100px
+    top: -10px
+  .date
+    border: solid 2px #ffffff
+    background: #fff
+    padding: 5px 12px
+    color: #221f1f
+    font-size: 40px
+    font-weight: 800
+    white-space: nowrap
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+.date-course-text
+  text-align: center
+  width: 100%
+  border: solid 2px #ffffff
+  padding: 20px 10px
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 17.5px
+  font-weight: 600
+
+.appeal
+  position: relative
+  line-height: 0.96
+  font-size: 39px
+  font-weight: 600
+  font-style: italic
+  max-width: 715px
+  margin: 0 0 0 auto
+  padding: 0 10px 0 100px
+  &:before
+    content: ''
+    position: absolute
+    width: 74px
+    height: 72px
+    background: url("../img/hand.png") no-repeat center
+      size: contain
+    left: 0
+    top: 50%
+    transform: translate(0,-50%)
+
+.main-img
+  position: relative
+  z-index: 1
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  margin: 20px 0 -20px
+  &:before
+    content: ''
+    position: absolute
+    bottom: 0
+    left: -5px
+    background: url("../img/shadow-img.png") no-repeat center
+      size: contain
+    width: 376px
+    height: 59px
+    z-index: -1
+  &:after
+    content: ''
+    position: absolute
+    width: 32px
+    height: 31px
+    background: url("../img/decor1.png") no-repeat center
+      size: contain
+    right: -32px
+    bottom: 170px
+
+.list-decor
+  font-size: 18.5px
+  font-weight: 600
+  li
+    margin: 0 0 15px
+    position: relative
+    padding: 0 0 0 23px
+    &:last-child
+      margin: 0
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 3px
+      width: 14px
+      height: 14px
+      background: url("../img/decor1.png") no-repeat center
+        size: contain
+
+//seminars-in-numbers
+.seminars-in-numbers
+  padding: 84px 0 82px
+
+
+.seminars-in-numbers__box
+  text-align: center
+  margin: 38px 0 0
+  p
+    font-size: 36.5px
+    font-weight: 600
+    font-style: italic
+    margin: 20px auto 0
+  .number
+    position: relative
+    z-index: 1
+    width: 100%
+    font-size: 106.5px
+    font-weight: 800
+    line-height: 1
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 5px
+      width: 100%
+      z-index: -1
+      height: 45px
+      background: url("../img/line-gradient.png") no-repeat center
+        size: cover
+
+.seminars-details
+  margin: 68px 0 0
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    right: 20px
+    bottom: -60px
+    background: url("../img/decor1.png") no-repeat center
+      size: contain
+    width: 57px
+    height: 54px
+  h3
+    width: 100%
+    max-width: 270px
+    background: #000
+    padding: 7px 0 7px 22px
+    color: #fff
+    margin: 0 0 15px
+    font-size: 20.5px
+    line-height: 1
+    font-weight: 800
+
+.seminars-details__box
+  margin: 0 0 40px
+  &:last-child
+    margin: 0
+
+.box-text
+  font-size: 18px
+
+.seminars-in-numbers-img
+  margin: 68px 0 0
+
+.seminars-details__box-wrap
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  ul
+    max-width: 330px
+    li
+      margin: 0 0 10px
+
+//about
+.about
+  position: relative
+  z-index: 1
+  padding: 0 0 37px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 115px
+    background: url("../img/line-gradient.png") no-repeat center
+      size: cover
+  h2
+    margin: 0 0 37px
+
+.about-box
+  margin: 0 0 24px
+  &:last-child
+    margin: 0
+  h3
+    color: #fff
+    font-weight: 800
+    font-size: 20.5px
+    width: 100%
+    background: #000
+    padding: 7px 22px
+    margin: 0 0 10px
+  .box-text
+    padding: 0 0 0 20px
+
+.about-footer
+  padding: 0 0 0 84px
+  position: relative
+  margin: 37px 0 0
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 15px
+    width: 66px
+    height: 109px
+    background: url("../img/heart.png") no-repeat center
+      size: contain
+  h4
+    margin: 0 0 52px
+    font-size: 38px
+    font-weight: 600
+    font-style: italic
+  .box-text
+    color: #fff
+    font-weight: 500
+
+.about-img
+  position: relative
+  z-index: 1
+  display: flex
+  align-items: flex-start
+  margin: 0 -50px 0 50px
+  img
+    position: relative
+    z-index: 1
+    min-width: 347px
+
+  &:before
+    content: ''
+    position: absolute
+    left: -2px
+    top: -10px
+    width: 349px
+    height: 349px
+    border-radius: 50%
+    background: url("../img/circle-gradient.png") no-repeat center
+      size: cover
+
+//speakers
+.speakers
+  background: url("../img/bg2.jpg") no-repeat center
+    size: cover
+  color: #fff
+  padding: 62px 0 86px
+  h3
+    padding: 10px 22px
+    text-transform: uppercase
+    color: #ffffff
+
+    font-size: 37.5px
+    font-weight: 800
+
+.speakers-avatar
+  margin: 48px auto 0
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  z-index: 1
+  img
+    position: relative
+    z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    bottom: 0
+    left: -20px
+    background: url("../img/circle-gradient.png") no-repeat center
+      size: cover
+    width: 407px
+    height: 407px
+
+
+.speakers-box
+  h3
+    position: relative
+    background: url("../img/line-gradient.png") no-repeat center
+      size: cover
+    margin: 0 0 80px
+    &:before
+      content: ''
+      position: absolute
+      width: 49px
+      height: 54px
+      background: url("../img/coursor.png") no-repeat center
+        size: contain
+      top: 20px
+      right: 0
+  ul
+    padding: 0 0 0 20px
+    font-size: 15px
+    font-weight: normal
+    li
+      margin: 0 0 5px
+
+.program
+  margin: 79px 0 0
+  width: 100%
+
+.program-body
+  width: 100%
+  border-radius: 47px
+  border: solid 2px #ffffff
+  position: relative
+  padding: 48px 63px 56px
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  background: #221f1f
+  margin: 0 0 -50px
+  h4
+    font-style: italic
+    margin: 0 0 35px
+    font-size: 27.5px
+    font-weight: 600
+
+.list-time
+  li
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+    p
+      width: 153px
+      height: 36px
+      display: flex
+      align-items: center
+      justify-content: center
+      color: #fff
+      background: url("../img/line-gradient.png") no-repeat center
+        size: cover
+      text-align: center
+      font-size: 19.5px
+      font-weight: 800
+      margin: 0 29px 0 0
+    span
+      max-width: 420px
+      width: 100%
+      font-size: 17.5px
+
+.program-body__img
+  position: absolute
+  bottom: 20px
+  right: 40px
+  max-width: 400px
+
+.program-footer
+  width: 100%
+  padding: 74px 79px 20px
+  column-count: 2
+  background: url("../img/panel-bg.png") no-repeat center
+    size: cover
+
+.advantages-line
+  display: flex
+  align-items: center
+  margin: 0 0 23px
+  font-size: 20px
+  font-weight: 500
+  color: #000
+  .number
+    font-size: 55.5px
+    width: 40px
+    text-align: center
+    font-weight: 800
+    color: #000
+    line-height: 1
+  .decor
+    width: 12px
+    min-width: 12px
+    margin: 0 20px
+
+.speakers-item-two
+  margin: 75px 0 0
+  .speakers-box
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      background: url("../img/decor1.png") no-repeat center
+        size: contain
+      width: 74px
+      height: 70px
+      right: 20px
+      bottom: -100px
+    ul
+      font-size: 25px
+      margin: 160px 0 0
+      li
+        margin: 0 0 20px
+        &:before
+         top: 10px
+  .speakers-avatar
+    &:after
+      content: ''
+      position: absolute
+      background: url("../img/decor1.png") no-repeat center
+        size: contain
+      width: 40px
+      height: 38px
+      right: 0
+      top: 20px
+    &:before
+      left: -25px
+
+.program-title
+  text-transform: uppercase
+  margin: 0 0 44px
+  font-size: 38px
+  font-weight: 800
+
+.price
+  padding: 0 0 66px
+  h2
+    color: #fff
+
+.price-title
+  background: url("../img/line-gradient.png") no-repeat center
+    size: cover
+  padding: 40px 0
+
+.price-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  position: relative
+
+.price-box
+  max-width: 320px
+  width: 100%
+  padding: 58px 0 0
+  h3
+    text-align: center
+    font-style: italic
+    font-size: 39px
+    font-weight: 600
+  &:last-child
+    .price-val
+      &:before
+        left: auto
+        right: 0
+      &:after
+        left: auto
+        right: -20px
+
+.price-val
+
+  color: #fff
+  padding: 12px 0
+  font-size: 61px
+  font-weight: bold
+  width: 100%
+  text-align: center
+  line-height: 1
+  margin: 20px 0
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    left: -10px
+    top: 0
+    height: 100%
+    width: 700px
+    background: #000
+    z-index: -1
+  &:after
+    content: ''
+    position: absolute
+    left: -30px
+    top: 50%
+    transform: translate(0,-50%)
+    width: 40px
+    height: 38px
+    background: url("../img/decor1.png") no-repeat center
+      size: contain
+
+.list-number
+  font-size: 18px
+  margin: 30px 0 0
+  counter-reset: item
+  li
+    margin: 0 0 19px
+    &:last-child
+      margin: 0
+    &:before
+      content: counters(item, ".") ". "
+      counter-increment: item
+      margin: 0 5px 0 0
+      font-weight: bold
+      display: inline-block
+
+
+
+.price-img
+  position: relative
+  z-index: 2
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  font-size: 18px
+  font-weight: bold
+
+.btn-border
+  width: 100%
+  border-radius: 27.4px
+  border: solid 2px #000000
+  max-width: 302px
+  height: 55px
+  &:hover
+    background: #000
+    color: #fff
+
+
+
+.btn-accent
+  background: url("../img/btn-bg.png") no-repeat center
+    size: cover
+  color: #fff
+  font-size: 47.5px
+  font-weight: bold
+  height: 103px
+  max-width: 600px
+  margin: 24px auto 0
+  border-radius: 70px
+
+//contacts
+.contacts
+  color: #fff
+  background: url("../img/bg2.jpg") no-repeat center
+    size: cover
+  padding: 68px 0 54px
+  h3
+    margin: 0 0 37px
+    font-size: 42px
+    width: 100%
+    font-weight: 800
+  h2
+    width: 100%
+    color: #fff
+    margin: 0 0 0 auto
+    max-width: 650px
+    padding: 18px
+    background: url("../img/line-gradient.png") no-repeat center
+      size: cover
+    font-size: 40px
+    text-align: center
+    font-weight: 800
+    text-transform: none
+  .appeal
+    padding: 0 0 0 110px
+    max-width: none
+    font-size: 44px
+
+
+.address
+  background: #221f1f
+  color: #fff
+  margin: 40px 0 -20px
+  padding: 28px 36px
+  font-size: 18.5px
+  font-weight: 600
+  border: solid 2px #ffffff
+
+.bay
+  line-height: 1
+  margin: 26px 0 32px auto
+  font-size: 87px
+  font-weight: 600
+  font-style: italic
+  border-bottom: 2px solid #fff
+  text-align: right
+  text-transform: uppercase
+  padding: 0 0 20px
+  width: fit-content
+
+.partner-wrapper
+  width: 100%
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  p
+    margin: 0 97px 0 0
+    font-size: 18px
+    font-weight: 600
+
+//footer
+footer
+  background: url("../img/line-gradient.png") no-repeat center
+    size: cover
+  padding: 38px 0
+  font-size: 30px
+  font-weight: 600
+  color: #000
+
+.phone
+  font-size: 35px
+  font-style: italic
+  color: #000
+  font-weight: bold
+  display: inline-block
+
+.btn-burger
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  width: 20px
+  height: 14px
+
+  margin: 0 0 0 10px
+  span
+    display: block
+    width: 100%
+    height: 2px
+    background: #fff
+
+.btn-menu
+  display: none
+  align-items: center
+  justify-content: flex-end
+  font-size: 16px
+  cursor: pointer
+  margin: 0 0 30px auto
+  
+
+@import "media"
+// Всегда в конце
