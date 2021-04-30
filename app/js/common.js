@@ -12,3 +12,5 @@ $('.go_to').click(function (e) {
 $('.btn-menu').on('click', function () {
    $('.menu').fadeToggle();
 });
+
+$('[name="phone"]').mask('+7(999) 999-99-99');

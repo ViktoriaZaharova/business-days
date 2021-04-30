@@ -92,11 +92,33 @@ input, textarea, select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  padding: 0;
+  padding: 0 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  height: 50px;
+  width: 100%; }
+
+button, .btn {
+  outline: none; }
+  button:hover, button:focus, .btn:hover, .btn:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+form .btn {
+  width: 100%;
+  margin: 30px auto 0;
+  max-width: 300px;
+  font-size: 20px;
+  height: 60px; }
+
+label {
+  width: 100%;
+  display: block;
+  margin: 0 0 15px; }
 
 .container {
   max-width: 1200px; }
@@ -924,6 +946,51 @@ footer {
   cursor: pointer;
   margin: 0 0 30px auto; }
 
+.modal-header, .modal-body {
+  padding: 0;
+  border: none;
+  width: 100%; }
+
+.modal-content {
+  border: none;
+    border-radius: 0;
+  padding: 40px 30px; }
+  .modal-content h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto 30px;
+    width: 100%; }
+
+.modal-dialog {
+  max-width: 500px; }
+
+.modal-header .close {
+  margin: 0;
+  padding: 0; }
+
+button.close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: 1;
+  cursor: pointer; }
+  button.close:before, button.close:after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #000; }
+  button.close:before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  button.close:after {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg); }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -1288,7 +1355,12 @@ footer {
     font-size: 18px;
     margin: 10px 0 0; }
   .seminars-details {
-    margin: 40px 0 0; } }
+    margin: 40px 0 0; }
+  .modal-content {
+    padding: 35px 20px; }
+    .modal-content h2 {
+      font-size: 24px;
+      margin: 0 auto 20px; } }
 
 @media only screen and (max-width: 480px) {
   .list-time li {

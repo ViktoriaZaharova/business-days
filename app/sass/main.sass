@@ -95,10 +95,32 @@ input, textarea, select
   outline: none
   box-shadow: none
   appearance: none
-  padding: 0
+  padding: 0 15px
   box-sizing: border-box
   font-family: $default-font
   font-size: 16px
+  border: 1px solid rgba(0, 0, 0, 0.5)
+  height: 50px
+  width: 100%
+
+button, .btn
+  outline: none
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+form
+  .btn
+    width: 100%
+    margin: 30px auto 0
+    max-width: 300px
+    font-size: 20px
+    height: 60px
+
+label
+  width: 100%
+  display: block
+  margin: 0 0 15px
 
 .container
   max-width: 1200px
@@ -833,7 +855,53 @@ footer
   font-size: 16px
   cursor: pointer
   margin: 0 0 30px auto
-  
+
+
+//modal
+.modal-header, .modal-body
+  padding: 0
+  border: none
+  width: 100%
+
+.modal-content
+  border: none
+    radius: 0
+  padding: 40px 30px
+  h2
+    text-align: center
+    font-size: 30px
+    margin: 0 auto 30px
+    width: 100%
+
+.modal-dialog
+  max-width: 500px
+
+.modal-header .close
+  margin: 0
+  padding: 0
+
+button.close
+  width: 20px
+  height: 20px
+  position: absolute
+  top: 20px
+  right: 20px
+  opacity: 1
+  cursor: pointer
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 10px
+    top: 0
+    width: 2px
+    height: 100%
+    background: #000
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
+
+
 
 @import "media"
 // Всегда в конце
