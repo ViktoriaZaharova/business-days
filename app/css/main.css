@@ -184,7 +184,8 @@ main {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 100%;
-  margin: 0 0 53px; }
+  margin: 0 0 53px;
+  position: relative; }
   .menu li a {
     font-size: 20px;
     font-weight: bold;
@@ -208,6 +209,29 @@ main {
       color: #F4E67F; }
   .menu li:last-child a:after {
     display: none; }
+
+.menu-close-item {
+  display: none; }
+
+.btn-close {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin: 15px 15px 0 auto; }
+  .btn-close:before, .btn-close:after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #fff; }
+  .btn-close:before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .btn-close:after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
 
 .title {
   width: 100%;
@@ -1329,6 +1353,10 @@ button.close {
       margin: 0; }
       .menu li a {
         padding: 20px; }
+  .menu-close-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .btn-menu {
     display: -webkit-box;
     display: -ms-flexbox;

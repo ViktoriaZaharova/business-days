@@ -13,6 +13,10 @@ $('.btn-menu').on('click', function () {
    $('.menu').fadeToggle();
 });
 
+$('.btn-close').on('click', function () {
+    $('.menu').fadeOut();
+});
+
 $('[name="phone"]').mask('+7(999) 999-99-99');
 
 new WOW().init();
